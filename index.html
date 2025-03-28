@@ -57,6 +57,25 @@
       padding: 10px;
       margin-bottom: 1px;
     }
+    #refresh-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #2b2b2b;
+      color: #fff;
+      font-size: 24px;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 14px;
+      box-shadow: 0 0 10px #000;
+      cursor: pointer;
+      z-index: 999;
+      transition: background-color 0.2s ease;
+    }
+
+    #refresh-btn:hover {
+      background-color: #444;
+}
   </style>
 </head>
 <body>
@@ -267,7 +286,7 @@
   <div class="static-item">👉 Wymieszaj twaróg z warzywami i podaj z chlebem.</div>
 </details>
 </details>
-    <button onclick="location.reload()">🔁 Odśwież</button>
+    <button onclick="location.reload()" id="refresh-btn">🔁</button>
 
 </body>
 </html>
