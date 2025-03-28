@@ -1,15 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <link rel="apple-touch-icon" href="icon.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Runmageddon Plan">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plan Runmageddon</title>
+  <title>Finalny Plan Runmageddon</title>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <style>
     body {
@@ -30,297 +24,191 @@
       margin-bottom: 10px;
     }
     summary {
-      font-size: 18px;
-      font-weight: bold;
       cursor: pointer;
+      font-weight: bold;
     }
-    li {
-      margin-bottom: 5px;
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-      transform: scale(1.2);
-    }
-    .sub-details {
+    .check-container {
+      display: flex;
+      align-items: center;
       background-color: #3a3a3a;
-      padding: 8px;
-      border-radius: 6px;
-      margin-top: 5px;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
     }
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-      summary {
-        font-size: 16px;
-      }
+    .check-container:hover {
+      background-color: #4a4a4a;
+    }
+    .check-container input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.3);
+      pointer-events: none;
+    }
+    .static-item {
+      background-color: #3a3a3a;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>🔥 Plan Runmageddon (2 tygodnie)</h1>
+
+<h1>🏃‍♂️ Finalny Plan Treningowy Runmageddon (2 tyg.)</h1>
 
   <details>
-    <summary>Dzień 1 – Interwały (lekki bieg)</summary>
-    <ul>
-      <li><input type="checkbox">30s trucht / 90s marsz – powtórz 6x</li>
-      <li><input type="checkbox">5 min rozgrzewka + 5 min schłodzenie</li>
-      <li>➡️ Kondycja i tlen</li>
-    </ul>
-    <strong>Posiłki:</strong>
-    <ul>
-      <li>
-        Śniadanie: Owsianka z masłem orzechowym i jabłkiem (~550 kcal)
-        <details class="sub-details">
-          <summary>Gramatura</summary>
-          - Płatki owsiane: 50g<br>
-          - Mleko 2%: 200ml<br>
-          - Masło orzechowe: 15g<br>
-          - Jabłko: 1 średnie (150g)
-        </details>
-      </li>
-      <li>
-        Obiad: Kurczak z kaszą gryczaną i surówką z marchewki (~750 kcal)
-        <details class="sub-details">
-          <summary>Gramatura</summary>
-          - Pierś z kurczaka: 150g<br>
-          - Kasza gryczana: 60g (waga surowa)<br>
-          - Marchewka: 100g<br>
-          - Oliwa: 10g
-        </details>
-      </li>
-      <li>
-        Kolacja: Jajka sadzone z chlebem i szpinakiem (~700 kcal)
-        <details class="sub-details">
-          <summary>Gramatura</summary>
-          - Jajka: 3 sztuki<br>
-          - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-          - Szpinak mrożony: 100g<br>
-          - Oliwa: 10g
-        </details>
-      </li>
-    </ul>
+<summary>✅ Tydzień 1</summary>
+  <details><summary class="check-container">Poniedziałek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">Marszobieg 20 min (30 sek trucht / 90 sek marsz)</label>
+    <label class="check-container"><input type="checkbox">2× 20 sek plank</label>
+    <label class="check-container"><input type="checkbox">2× 15 sek side plank</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍗 Kurczak z ryżem i surówką</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
   </details>
-
-  
-<details>
-  <summary>Dzień 2 – Core + góra (bez cardio)</summary>
-  <ul>
-    <li><input type="checkbox">Plank 3x max</li>
-    <li><input type="checkbox">Mountain climbers 3x30s</li>
-    <li><input type="checkbox">Pompki (lub na kolanach) 3x max</li>
-    <li><input type="checkbox">Wiosłowanie gumą/hantlami</li>
-    <li>➡️ Stabilizacja i siła</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    <li>Śniadanie: Jajecznica z chlebem i pomidorem (~600 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Jajka: 3 sztuki<br>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Pomidor: 1 duży (150g)<br>
-      - Masło klarowane: 10g</details></li>
-    <li>Obiad: Fasolka po bretońsku z indykiem i ryżem (~800 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Fasola biała: 150g<br>
-      - Pierś z indyka: 100g<br>
-      - Passata pomidorowa: 150g<br>
-      - Cebula + czosnek: 50g<br>
-      - Oliwa: 10g<br>
-      - Ryż basmati: 50g (waga surowa)</details></li>
-    <li>Kolacja: Twaróg z jogurtem i ogórkiem (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Twaróg półtłusty: 150g<br>
-      - Jogurt naturalny: 100g<br>
-      - Ogórek: 100g<br>
-      - Olej lniany: 10g</details></li>
-  </ul>
+  <details><summary class="check-container">Wtorek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">3× 15 przysiadów</label>
+    <label class="check-container"><input type="checkbox">3× 10 pompek</label>
+    <label class="check-container"><input type="checkbox">3× 20 sek plank</label>
+    <label class="check-container"><input type="checkbox">3× zwis na drążku lub farmer's carry</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍛 Fasolka po bretońsku z indykiem + ziemniaki</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Środa</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">30 min spacer/joga/stretching</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍽️ Indyk z kaszą gryczaną + surówka z marchewki</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Czwartek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">6× (30 sek sprint / 90 sek marsz)</label>
+    <label class="check-container"><input type="checkbox">2× 5 burpees</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍝 Makaron pełnoziarnisty z sosem pomidorowym i mięsem mielonym</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Piątek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">2× 5 min: przysiady, pompki, mountain climbers, sprawlers</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍗 Kurczak z ryżem i surówką</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Sobota</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">30 min (2 min trucht / 2 min marsz)</label>
+    <label class="check-container"><input type="checkbox">2× zwis na drążku lub farmer’s carry</label>
+    <label class="check-container"><input type="checkbox">2× 20 sek plank bokiem</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍽️ Indyk z kaszą gryczaną + surówka</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Niedziela</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">Spacer, rozciąganie, regeneracja</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍛 Fasolka po bretońsku z indykiem + ziemniaki</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
 </details>
 
 <details>
-  <summary>Dzień 3 – Active recovery (luz)</summary>
-  <ul>
-    <li><input type="checkbox">Spacer, joga lub rower 30-45 min</li>
-    <li>➡️ Regeneracja z ruchem</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    <li>Śniadanie: Płatki owsiane z jogurtem i orzechami (~550 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Płatki owsiane: 50g<br>
-      - Jogurt naturalny: 150g<br>
-      - Orzechy włoskie: 15g</details></li>
-    <li>Obiad: Pierś z indyka + ziemniaki + kapusta kiszona (~850 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Pierś z indyka: 150g<br>
-      - Ziemniaki: 250g<br>
-      - Kapusta kiszona: 100g<br>
-      - Oliwa: 10g</details></li>
-    <li>Kolacja: Kanapki z hummusem, jajkiem i warzywami (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Hummus: 40g<br>
-      - Jajko: 1 sztuka<br>
-      - Warzywa: 100g</details></li>
-  </ul>
+<summary>🚀 Tydzień 2</summary>
+  <details><summary class="check-container">Poniedziałek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">25 min biegu (5 min bieg / 1 min marsz)</label>
+    <label class="check-container"><input type="checkbox">3× sprint pod górkę (~50 m)</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍗 Kurczak z ryżem i surówką</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Wtorek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">4× 10 wykroków</label>
+    <label class="check-container"><input type="checkbox">4× 10 pompek</label>
+    <label class="check-container"><input type="checkbox">4× 30 sek plank</label>
+    <label class="check-container"><input type="checkbox">4× zwis/farmer’s carry</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍛 Fasolka po bretońsku z indykiem + ziemniaki</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Środa</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">20 min bieg (co 2 min sprint 10 sek)</label>
+    <label class="check-container"><input type="checkbox">Wejścia na ławkę, czołganie, noszenie ciężaru</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍽️ Indyk z kaszą gryczaną + surówka</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Czwartek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">Regeneracja</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍝 Makaron pełnoziarnisty z sosem pomidorowym i mięsem mielonym</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Piątek</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">Interwały 1 min szybko / 1 min trucht × 5</label>
+    <label class="check-container"><input type="checkbox">3× 5 burpees</label>
+    <label class="check-container"><input type="checkbox">2× 10 wejść na ławkę</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍗 Kurczak z ryżem i surówką</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Sobota</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">5 km: bieg, pompki, przysiady, czołganie, burpees</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍽️ Indyk z kaszą gryczaną + surówka</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
+  <details><summary class="check-container">Niedziela</summary>
+    <h2>Trening</h2>
+    <label class="check-container"><input type="checkbox">Regeneracja + mentalne przygotowanie</label>
+    <h2>Jedzenie</h2>
+    <label class="check-container"><input type="checkbox">🥣 Owsianka + jabłko + masło orzechowe</label>
+    <label class="check-container"><input type="checkbox">🍛 Fasolka po bretońsku z indykiem + ziemniaki</label>
+    <label class="check-container"><input type="checkbox">🥚 Twaróg z warzywami + chleb pełnoziarnisty</label>
+  </details>
 </details>
 
 <details>
-  <summary>Dzień 4 – Obwodówka</summary>
-  <ul>
-    <li><input type="checkbox">10 przysiadów</li>
-    <li><input type="checkbox">10 burpees</li>
-    <li><input type="checkbox">20 jumping jacks</li>
-    <li><input type="checkbox">10 wykroków</li>
-    <li>➡️ Wytrzymałość mięśni</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    
-    <li>Śniadanie: Owsianka z masłem orzechowym i jabłkiem (~550 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Płatki owsiane: 50g<br>
-      - Mleko 2%: 200ml<br>
-      - Masło orzechowe: 15g<br>
-      - Jabłko: 1 średnie (150g)</details></li>
-    <li>Obiad: Kurczak z kaszą gryczaną i surówką z marchewki (~750 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Pierś z kurczaka: 150g<br>
-      - Kasza gryczana: 60g (waga surowa)<br>
-      - Marchewka: 100g<br>
-      - Oliwa: 10g</details></li>
-    <li>Kolacja: Jajka sadzone z chlebem i szpinakiem (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Jajka: 3 sztuki<br>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Szpinak mrożony: 100g<br>
-      - Oliwa: 10g</details></li>
-
-  </ul>
+<summary>🔋 Dodatkowe kalorie (~200 kcal na głód lub większy wysiłek)</summary>
+  <div class="static-item">🥜 1 banan + 1 łyżka masła orzechowego</div>
+  <div class="static-item">🥣 Jogurt naturalny + 1 łyżka chia + garść owoców</div>
+  <div class="static-item">🧀 Serek wiejski + pestki dyni</div>
+  <div class="static-item">🍞 Kanapka z hummusem lub jajkiem</div>
 </details>
 
 <details>
-  <summary>Dzień 5 – Bieg ciągły</summary>
-  <ul>
-    <li><input type="checkbox">5-6 km spokojnym tempem</li>
-    <li>➡️ Test terenu i wydolności</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    
-    <li>Śniadanie: Jajecznica z chlebem i pomidorem (~600 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Jajka: 3 sztuki<br>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Pomidor: 1 duży (150g)<br>
-      - Masło klarowane: 10g</details></li>
-    <li>Obiad: Fasolka po bretońsku z indykiem i ryżem (~800 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Fasola biała: 150g<br>
-      - Pierś z indyka: 100g<br>
-      - Passata pomidorowa: 150g<br>
-      - Cebula + czosnek: 50g<br>
-      - Oliwa: 10g<br>
-      - Ryż basmati: 50g (waga surowa)</details></li>
-    <li>Kolacja: Twaróg z jogurtem i ogórkiem (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Twaróg półtłusty: 150g<br>
-      - Jogurt naturalny: 100g<br>
-      - Ogórek: 100g<br>
-      - Olej lniany: 10g</details></li>
-
-  </ul>
+<summary>📌 Porady na Runmageddon</summary>
+  <div class="static-item">🔥 Zacznij wolno – lepiej rozkręcić się później niż spalić na starcie</div>
+  <div class="static-item">💨 Oddychaj głęboko i rytmicznie – 3 kroki wdech, 2 kroki wydech</div>
+  <div class="static-item">🧗 Do przeszkód podchodź spokojnie – nie napinaj się, zachowaj technikę</div>
+  <div class="static-item">💪 Jeśli coś Ci nie wyjdzie – robisz burpees i lecisz dalej, luz</div>
+  <div class="static-item">🧠 Mental > zmęczenie. Skup się na kolejnych krokach, nie całości</div>
+  <div class="static-item">🧃 Przed biegiem zjedz lekkie śniadanie: np. owsianka z bananem albo tosty z jajkiem</div>
 </details>
 
-<details>
-  <summary>Dzień 6 – Core again</summary>
-  <ul>
-    <li><input type="checkbox">Powtórka z dnia 2</li>
-    <li>➡️ Wzmocnienie bazy</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    
-    <li>Śniadanie: Płatki owsiane z jogurtem i orzechami (~550 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Płatki owsiane: 50g<br>
-      - Jogurt naturalny: 150g<br>
-      - Orzechy włoskie: 15g</details></li>
-    <li>Obiad: Pierś z indyka + ziemniaki + kapusta kiszona (~850 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Pierś z indyka: 150g<br>
-      - Ziemniaki: 250g<br>
-      - Kapusta kiszona: 100g<br>
-      - Oliwa: 10g</details></li>
-    <li>Kolacja: Kanapki z hummusem, jajkiem i warzywami (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Hummus: 40g<br>
-      - Jajko: 1 sztuka<br>
-      - Warzywa: 100g</details></li>
-
-  </ul>
-</details>
-
-<details>
-  <summary>Dzień 7 – Rest & stretch</summary>
-  <ul>
-    <li><input type="checkbox">Stretching, mobilizacja, odpoczynek</li>
-    <li>➡️ Regeneracja</li>
-  </ul>
-  <strong>Posiłki:</strong>
-  <ul>
-    
-    <li>Śniadanie: Owsianka z masłem orzechowym i jabłkiem (~550 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Płatki owsiane: 50g<br>
-      - Mleko 2%: 200ml<br>
-      - Masło orzechowe: 15g<br>
-      - Jabłko: 1 średnie (150g)</details></li>
-    <li>Obiad: Kurczak z kaszą gryczaną i surówką z marchewki (~750 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Pierś z kurczaka: 150g<br>
-      - Kasza gryczana: 60g (waga surowa)<br>
-      - Marchewka: 100g<br>
-      - Oliwa: 10g</details></li>
-    <li>Kolacja: Jajka sadzone z chlebem i szpinakiem (~700 kcal)
-      <details class="sub-details"><summary>Gramatura</summary>
-      - Jajka: 3 sztuki<br>
-      - Chleb pełnoziarnisty: 2 kromki (~60g)<br>
-      - Szpinak mrożony: 100g<br>
-      - Oliwa: 10g</details></li>
-
-  </ul>
-</details>
-
-
-<h2>🔥 Codziennie</h2>
-  <ul>
-    <li><input type="checkbox">Plank min. 1 min</li>
-    <li><input type="checkbox">Pij wodę</li>
-    <li><input type="checkbox">Śpij min. 7h</li>
-  </ul>
-
-  <h2>🛟 Co dorzucić, jak będziesz głodny (200–300 kcal)</h2>
-  <ul>
-    <li><strong>Szybkie + sycące:</strong> Serek wiejski + pestki dyni / 2 jajka + ogórek / Twaróg z jogurtem i kakao</li>
-    <li><strong>Na słodko:</strong> Banan + masło orzechowe / Owsianka instant / Jogurt z miodem i orzechami</li>
-    <li><strong>Na zajawkę:</strong> Guma bez cukru, woda z cytryną + szczypta soli, herbata ziołowa</li>
-  </ul>
-
-  <script>
-    // Zapis i odczyt checkboxów w localStorage
-    document.addEventListener('DOMContentLoaded', () => {
-      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach((checkbox, i) => {
-        const id = 'checkbox_' + i;
-        checkbox.id = id;
-        checkbox.checked = localStorage.getItem(id) === 'true';
-        checkbox.addEventListener('change', () => {
-          localStorage.setItem(id, checkbox.checked);
-        });
-      });
-    });
-  </script>
 </body>
 </html>
